@@ -68,10 +68,10 @@ const Sidebar = () => {
 
                     </ul>
                 </div>
-                {/* <Mainpage /> */}
-                <div className='mx-auto '>
+                <Mainpage />
+                {/* <div className='mx-auto '>  // I will show this default page when user visit the page first time
                     <Defaultpage />
-                </div>
+                </div> */}
             </main></div>
     )
 }
