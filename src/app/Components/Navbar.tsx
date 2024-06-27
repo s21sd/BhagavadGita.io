@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
     return (
-        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-between ">
+        <div className="mx-auto flex flex-wrap p-5  flex-col md:flex-row items-center justify-between ">
             <div className="flex title-font font-medium items-center text-white mb-4 md:mb-0 ">
                 <h1 className="ml-3 text-2xl tracking-wide cursor-pointer font-bold leading-relaxed">Bhagavad<span className='text-[#FF8434]'>Gita</span></h1>
             </div>

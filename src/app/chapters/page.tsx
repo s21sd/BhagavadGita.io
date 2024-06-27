@@ -1,8 +1,11 @@
 import React from 'react'
+import Sidebar from '../Components/Sidebar'
 
 const page = () => {
     return (
-        <div className='text-white'>page</div>
+        <>
+            <Sidebar />
+        </>
     )
 }
 

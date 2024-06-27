@@ -4,6 +4,9 @@ import React from 'react';
 
 const Landingpage = () => {
     const router = useRouter();
+    const handleClick = () => {
+        window.location.href = 'https://github.com/s21sd/BhagavadGita.io'
+    }
     return (
         <div className=" flex flex-col justify-between items-center mt-10">
             <div className="container px-5 py-24 mx-auto">
@@ -19,7 +22,7 @@ const Landingpage = () => {
                     <div onClick={() => router.push('/chapters')} className='bg-[#FF8434] hover:bg-[#f79b5f] rounded-md w-[250px] cursor-pointer text-white flex justify-center items-center mx-auto p-4'>
                         <h1>Start your journey</h1>
                     </div>
-                    <div className='border border-[#FF8434] rounded-md w-[250px] cursor-pointer text-white flex justify-center items-center mx-auto p-4'>
+                    <div onClick={handleClick} className='border border-[#FF8434] rounded-md w-[250px] cursor-pointer text-white flex justify-center items-center mx-auto p-4'>
                         <h1>Star on Github ⭐</h1>
                     </div>
                 </div>
