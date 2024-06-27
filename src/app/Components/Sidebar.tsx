@@ -1,5 +1,6 @@
 import React from 'react'
 import Mainpage from './Mainpage'
+import Defaultpage from './Defaultpage'
 
 const Sidebar = () => {
     return (
@@ -67,7 +68,10 @@ const Sidebar = () => {
 
                     </ul>
                 </div>
-                <Mainpage />
+                {/* <Mainpage /> */}
+                <div className='mx-auto '>
+                    <Defaultpage />
+                </div>
             </main></div>
     )
 }

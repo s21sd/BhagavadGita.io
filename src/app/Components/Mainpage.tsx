@@ -2,11 +2,9 @@ import { Pagination } from '@/components/ui/pagination'
 import React from 'react'
 import {
   PaginationContent,
-  PaginationEllipsis,
   PaginationItem,
   PaginationLink,
-  PaginationNext,
-  PaginationPrevious,
+
 } from "@/components/ui/pagination"
 const Mainpage = () => {
   return (
@@ -43,9 +41,7 @@ const Mainpage = () => {
       <div className='text-white mt-10'>
         <Pagination>
           <PaginationContent>
-            <PaginationItem>
-              <PaginationPrevious href="#" />
-            </PaginationItem>
+
             <PaginationItem>
               <PaginationLink href="#">1</PaginationLink>
             </PaginationItem>
@@ -61,12 +57,8 @@ const Mainpage = () => {
             <PaginationItem>
               <PaginationLink href="#">5</PaginationLink>
             </PaginationItem>
-            <PaginationItem>
-              <PaginationEllipsis />
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationNext href="#" />
-            </PaginationItem>
+
+
           </PaginationContent>
         </Pagination>
       </div>
