@@ -1,65 +1,69 @@
-import React from 'react'
-import { FaRegHeart } from 'react-icons/fa'
-const Slokpage = () => {
+import React from 'react';
+import { FaRegHeart } from 'react-icons/fa';
+
+const Slokpage = ({ slokData }: any) => {
+    const { chapter, verse, slok, transliteration, ...authors } = slokData;
+    const listOfAuthors = Object.values(authors);
+    console.log(listOfAuthors);
+    const modifiedData = { chapter, verse, slok, transliteration, listOfAuthors };
+
     return (
 
-        <div className="flex-1 rounded-lg bg-opacity-20 mt-10">
-            <h1 className='text-center font-bold text-[#FF8434] w-fit mx-auto text-2xl tracking-widest mt-10'>Chapter - 1 </h1>
-            <div className='m-12 flex justify-between items-center'>
-                <h1 className='text-[#FF8434] font-semibold text-xl'>Verse - 1</h1>
-                <FaRegHeart className=' cursor-pointer' color='#FF8434' size={24} />
+        <div className="flex-1 rounded-lg bg-opacity-20 mt-10 p-6">
+            <h1 className="text-center font-bold text-[#FF8434] w-fit mx-auto text-2xl tracking-widest mt-10">
+                Chapter - {chapter}
+            </h1>
+            <div className="m-12 flex justify-between items-center">
+                <h1 className="text-[#FF8434] font-semibold text-xl">Verse - {verse}</h1>
+                <FaRegHeart className="cursor-pointer" color="#FF8434" size={24} />
             </div>
-            <div className='grid gap-3 m-12'>
-                <p className='text-white'>Slok - <span className='text-gray-400'>"धृतराष्ट्र उवाच |\nधर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः |\nमामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ||१-१||",</span></p>
-                <p className='text-white'>Translation - <span className='text-gray-400'>"dhṛtarāṣṭra uvāca .\ndharmakṣetre kurukṣetre samavetā yuyutsavaḥ .\nmāmakāḥ pāṇḍavāścaiva kimakurvata sañjaya ||1-1||",</span></p>
+            <div className="grid gap-3 m-12">
+                <p className="text-white">Slok - <span className="text-gray-400">{slok}</span></p>
+                <p className="text-white">Translation - <span className="text-gray-400">{transliteration}</span></p>
             </div>
-            <div className='m-12'>
-                <h1 className='text-[#FF8434] text-xl font-semibold'>Authors</h1>
+            <div className="m-12">
+                <h1 className="text-[#FF8434] text-xl font-semibold">Authors</h1>
             </div>
-            <div className='m-12 border border-[#FF8434] rounded-md  h-[150px] p-2'>
-                <h1 className='text-[#FF8434] font-semibold tracking-wide m-4' >Swami Tejomayananda</h1>
-                <h1 className='text-gray-400 ml-16'>
-                    "।।1.1।।धृतराष्ट्र ने कहा -- हे संजय ! धर्मभूमि कुरुक्षेत्र में एकत्र हुए युद्ध के इच्छुक (युयुत्सव:) मेरे और पाण्डु के पुत्रों ने क्या किया?"
-                </h1>
-
-            </div>
-            <div className='m-12 border border-[#FF8434] rounded-md  h-[150px] p-2'>
-                <h1 className='text-[#FF8434] font-semibold tracking-wide m-4' >Swami Tejomayananda</h1>
-                <h1 className='text-gray-400 ml-16'>
-                    "।।1.1।।धृतराष्ट्र ने कहा -- हे संजय ! धर्मभूमि कुरुक्षेत्र में एकत्र हुए युद्ध के इच्छुक (युयुत्सव:) मेरे और पाण्डु के पुत्रों ने क्या किया?"
-                </h1>
-
-            </div>
-            <div className='m-12 border border-[#FF8434] rounded-md  h-[150px] p-2'>
-                <h1 className='text-[#FF8434] font-semibold tracking-wide m-4' >Swami Tejomayananda</h1>
-                <h1 className='text-gray-400 ml-16'>
-                    "।।1.1।।धृतराष्ट्र ने कहा -- हे संजय ! धर्मभूमि कुरुक्षेत्र में एकत्र हुए युद्ध के इच्छुक (युयुत्सव:) मेरे और पाण्डु के पुत्रों ने क्या किया?"
-                </h1>
-
-            </div>
-            <div className='m-12 border border-[#FF8434] rounded-md  h-[150px] p-2'>
-                <h1 className='text-[#FF8434] font-semibold tracking-wide m-4' >Swami Tejomayananda</h1>
-                <h1 className='text-gray-400 ml-16'>
-                    "।।1.1।।धृतराष्ट्र ने कहा -- हे संजय ! धर्मभूमि कुरुक्षेत्र में एकत्र हुए युद्ध के इच्छुक (युयुत्सव:) मेरे और पाण्डु के पुत्रों ने क्या किया?"
-                </h1>
-
-            </div>
-            <div className='m-12 border border-[#FF8434] rounded-md  h-[150px] p-2'>
-                <h1 className='text-[#FF8434] font-semibold tracking-wide m-4' >Swami Tejomayananda</h1>
-                <h1 className='text-gray-400 ml-16'>
-                    "।।1.1।।धृतराष्ट्र ने कहा -- हे संजय ! धर्मभूमि कुरुक्षेत्र में एकत्र हुए युद्ध के इच्छुक (युयुत्सव:) मेरे और पाण्डु के पुत्रों ने क्या किया?"
-                </h1>
-
-            </div>
-            <div className='m-12 border border-[#FF8434] rounded-md  h-[150px] p-2'>
-                <h1 className='text-[#FF8434] font-semibold tracking-wide m-4' >Swami Tejomayananda</h1>
-                <h1 className='text-gray-400 ml-16'>
-                    "।।1.1।।धृतराष्ट्र ने कहा -- हे संजय ! धर्मभूमि कुरुक्षेत्र में एकत्र हुए युद्ध के इच्छुक (युयुत्सव:) मेरे और पाण्डु के पुत्रों ने क्या किया?"
-                </h1>
-
+            <div>
+                {modifiedData.listOfAuthors.map((author: any, index: number) => (
+                    index != 0 &&
+                    <div key={index} className="m-12 border border-[#edbb99] rounded-md p-4 gap-3">
+                        <h1 className="text-[#FF8434] font-semibold tracking-wide mb-4">{author.author}</h1>
+                        {author.ht && (
+                            <div className="flex mt-4">
+                                <p className="text-white">Hindi Translation:</p>
+                                <h1 className="text-gray-400 ml-4">{author.ht}</h1>
+                            </div>
+                        )}
+                        {author.et && (
+                            <div className="flex mt-4">
+                                <p className="text-white">English Translation:</p>
+                                <h1 className="text-gray-400 ml-4">{author.et}</h1>
+                            </div>
+                        )}
+                        {author.ec && (
+                            <div className="flex mt-4">
+                                <p className="text-white">English Commentary:</p>
+                                <h1 className="text-gray-400 ml-4">{author.ec}</h1>
+                            </div>
+                        )}
+                        {author.hc && (
+                            <div className="flex mt-4">
+                                <p className="text-white">Hindi Commentary:</p>
+                                <h1 className="text-gray-400 ml-4">{author.hc}</h1>
+                            </div>
+                        )}
+                        {author.sc && (
+                            <div className="flex mt-4">
+                                <p className="text-white">Sanskrit Commentary:</p>
+                                <h1 className="text-gray-400 ml-4">{author.sc}</h1>
+                            </div>
+                        )}
+                    </div>
+                ))}
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Slokpage
+export default Slokpage;
