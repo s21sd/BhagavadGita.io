@@ -31,8 +31,8 @@ const Sidebar = () => {
     return (
         <div>
             <main className="flex">
-                <ScrollArea className="sm:w-60 w-14 pt-4 h-screen rounded-md text-white">
-                    <div className="text-[#FF8434] p-6 font-bold text-2xl tracking-widest">
+                <ScrollArea className="sm:w-60 w-14 pt-4 h-screen rounded-md mycolor text-white">
+                    <div className="text-[#FF8434]  p-6 font-bold text-2xl tracking-widest">
                         <h1>Chapters</h1>
                     </div>
                     <ul className="mt-6 mb-5">
@@ -42,7 +42,7 @@ const Sidebar = () => {
                                 onClick={() => fetchThechapter(i + 1)}
                                 className={getClassName(i + 1)}
                             >
-                                <span className="ml-3 hidden sm:block font-semibold tracking-wide text-white transition-colors">
+                                <span className="ml-3 hidden sm:block font-semibold tracking-wide text-white mycolor transition-colors">
                                     Chapter - {i + 1}
                                 </span>
                             </li>

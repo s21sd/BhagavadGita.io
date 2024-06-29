@@ -18,8 +18,8 @@ const Slokpage = ({ slokData }: any) => {
                 <FaRegHeart className="cursor-pointer" color="#FF8434" size={24} />
             </div>
             <div className="grid gap-3 m-12">
-                <p className="text-white">Slok - <span className="text-gray-400">{slok}</span></p>
-                <p className="text-white">Translation - <span className="text-gray-400">{transliteration}</span></p>
+                <p className="text-white mycolor">Slok - <span className="text-gray-400 mycolor2">{slok}</span></p>
+                <p className="text-white mycolor">Translation - <span className="text-gray-400 mycolor2">{transliteration}</span></p>
             </div>
             <div className="m-12">
                 <h1 className="text-[#FF8434] text-xl font-semibold">Authors</h1>
@@ -31,32 +31,32 @@ const Slokpage = ({ slokData }: any) => {
                         <h1 className="text-[#FF8434] font-semibold tracking-wide mb-4">{author.author}</h1>
                         {author.ht && (
                             <div className="flex mt-4">
-                                <p className="text-white">Hindi Translation:</p>
-                                <h1 className="text-gray-400 ml-4">{author.ht}</h1>
+                                <p className="text-white mycolor">Hindi Translation:</p>
+                                <h1 className="text-gray-400 ml-4 mycolor2">{author.ht}</h1>
                             </div>
                         )}
                         {author.et && (
                             <div className="flex mt-4">
-                                <p className="text-white">English Translation:</p>
-                                <h1 className="text-gray-400 ml-4">{author.et}</h1>
+                                <p className="text-white mycolor">English Translation:</p>
+                                <h1 className="text-gray-400 ml-4 mycolor2">{author.et}</h1>
                             </div>
                         )}
                         {author.ec && (
                             <div className="flex mt-4">
-                                <p className="text-white">English Commentary:</p>
-                                <h1 className="text-gray-400 ml-4">{author.ec}</h1>
+                                <p className="text-white mycolor">English Commentary:</p>
+                                <h1 className="text-gray-400 ml-4 mycolor2">{author.ec}</h1>
                             </div>
                         )}
                         {author.hc && (
                             <div className="flex mt-4">
-                                <p className="text-white">Hindi Commentary:</p>
-                                <h1 className="text-gray-400 ml-4">{author.hc}</h1>
+                                <p className="text-white mycolor">Hindi Commentary:</p>
+                                <h1 className="text-gray-400 ml-4 mycolor2">{author.hc}</h1>
                             </div>
                         )}
                         {author.sc && (
                             <div className="flex mt-4">
-                                <p className="text-white">Sanskrit Commentary:</p>
-                                <h1 className="text-gray-400 ml-4">{author.sc}</h1>
+                                <p className="text-white mycolor">Sanskrit Commentary:</p>
+                                <h1 className="text-gray-400 ml-4 mycolor2">{author.sc}</h1>
                             </div>
                         )}
                     </div>

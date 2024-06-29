@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #000000;
-}
-
 .custom-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -17,6 +13,18 @@ body {
 
 @layer base {
   :root {
+    body {
+      background-color: whitesmoke;
+    }
+
+    .mycolor {
+      color: black;
+    }
+
+    .mycolor2 {
+      color: rgb(128, 124, 124);
+    }
+
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
@@ -49,7 +57,19 @@ body {
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    body {
+      background-color: #000000;
+    }
+
+    .mycolor {
+      color: white;
+    }
+
+    .mycolor2 {
+      color: #9ca3af;
+    }
+
+    --background: #000000;
     --foreground: 210 40% 98%;
 
     --card: 222.2 84% 4.9%;
