@@ -48,9 +48,9 @@ const Page = () => {
     };
 
     return (
-        <div className="text-gray-600 body-font m-12">
+        <div className="text-gray-600 body-font m-3 sm:m-12">
             <Toaster />
-            <h1 className='font-bold text-[#FF8434] text-2xl tracking-widest'>Favourites</h1>
+            <h1 className='font-bold text-[#FF8434] text-xl sm:text-2xl tracking-widest'>Favourites</h1>
             {favourites.length > 0 ? (
                 <div className='flex flex-wrap justify-center items-center'>
                     {favourites.map((fav: any, index: number) => (
@@ -81,8 +81,8 @@ const Page = () => {
                 </div>
             ) : (
                 <div className="text-center mt-20">
-                    <h2 className="text-2xl font-semibold text-gray-700">No Favorites Yet</h2>
-                    <p className="text-lg text-gray-500">Add some sloks to your favorites to see them here.</p>
+                    <h2 className="text-xl sm:text-2xl font-semibold text-gray-700">No Favorites Yet</h2>
+                    <p className="text-sm sm:text-lg text-gray-500">Add some sloks to your favorites to see them here.</p>
                 </div>
             )}
             {slokData && (

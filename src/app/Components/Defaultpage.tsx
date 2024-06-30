@@ -13,9 +13,9 @@ const Defaultpage = () => {
                 sizes="50vw"
                 alt="defaultImg "
             />
-            <div className="flex flex-col text-center w-full mb-16 mt-5">
-                <p className="lg:w-[90%] font-semibold mx-auto leading-relaxed mb-1 text-gray-400">Click on any chapter in the menu to read.</p>
-                <p className="lg:w-2/3 font-semibold mx-auto leading-relaxed text-gray-400">Inside every chapter there are some verses.Click on any verseto read in detail with explanation various authors(Hindi,English,Sanskrit).</p>
+            <div className="flex flex-col text-center w-full mb-16 mt-5 text-xs sm:text-xl p-2">
+                <p className="lg:w-[90%] font-semibold mx-auto leading-relaxed mb-1 mycolor text-gray-400">Click on any chapter in the menu to read.</p>
+                <p className="lg:w-2/3 font-semibold mx-auto leading-relaxed text-gray-400 mycolor2">Inside every chapter there are some verses.Click on any verseto read in detail with explanation various authors(Hindi,English,Sanskrit).</p>
             </div>
         </div>
     )

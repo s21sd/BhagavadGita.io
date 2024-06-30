@@ -56,15 +56,15 @@ const Mainpage = ({ chapter }: any) => {
 
       <div>
         {chapter && !slokData && <div className="flex-1 rounded-lg bg-opacity-20 mt-10">
-          <h1 className='text-center font-bold text-[#FF8434] w-fit mx-auto text-2xl tracking-widest mt-10'>Chapter - {chapter.chapter_number} </h1>
-          <div className='m-12'>
-            <h1 className='text-[#FF8434] font-semibold'>Total verses - {chapter.verses_count}</h1>
+          <h1 className='text-center font-bold text-[#FF8434] w-fit mx-auto text-xl sm:text-2xl tracking-widest sm:mt-10'>Chapter - {chapter.chapter_number} </h1>
+          <div className='m-4 sm:m-12'>
+            <h1 className='text-[#FF8434] font-semibold sm:text-xl'>Total verses - {chapter.verses_count}</h1>
             <div className='grid gap-1 mt-3'>
               <p className='text-white mycolor'>Name - <span className='text-gray-400 mycolor2'>{chapter.name}</span></p>
               <p className='text-white mycolor'>Translation - <span className='text-gray-400 mycolor2'>{chapter.translation}</span></p>
             </div>
           </div>
-          <div className='m-12'>
+          <div className='m-4 sm:m-12'>
             <h1 className='text-[#FF8434] font-semibold'>Meaning -</h1>
             <div className='grid gap-1 mt-3'>
               <p className='text-white mycolor'>English - <span className='text-gray-400 mycolor2'>{chapter.meaning.en}</span></p>
@@ -73,11 +73,11 @@ const Mainpage = ({ chapter }: any) => {
           </div>
           <div className='m-12'>
             <h1 className='text-[#FF8434] font-semibold'>Summary -</h1>
-            <div className='flex gap-5 mt-3'>
+            <div className='sm:flex gap-5 mt-3'>
               <h1 className='text-white font-semibold mycolor'>English </h1>
               <p className='text-gray-400 mycolor2'>{chapter.summary.en}</p>
             </div>
-            <div className='flex gap-5 mt-12'>
+            <div className='sm:flex gap-5 mt-12'>
               <h1 className='text-white font-semibold mycolor'>Hindi </h1>
               <p className='text-gray-400 mycolor2'>{chapter.summary.hi}</p>
             </div>
@@ -87,11 +87,11 @@ const Mainpage = ({ chapter }: any) => {
         }
         {slokData && <Slokpage slokData={slokData} />}
       </div >
-      <div className='text-white m-10 flex flex-col gap-5 mycolor '>
+      <div className='text-white sm:m-12 flex flex-col gap-5 mycolor '>
         <h1 className='text-center font-semibold text-[#FF8434] w-fit mx-auto text-xl tracking-widest'>List Of Verses</h1>
         <Pagination>
           <PaginationContent>
-            <div className='flex flex-wrap gap-2'>
+            <div className='flex flex-wrap justify-center  items-center gap-2 sm:m-12'>
               {verseArr}
             </div>
           </PaginationContent>
