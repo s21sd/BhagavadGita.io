@@ -37,12 +37,15 @@ const Mainpage = ({ chapter }: any) => {
   const handleClick = (slokNo: number) => {
     setSelectedSlokNo(slokNo);
   };
+  const getTheClassName = (slokNo: number) => {
+    return selectedSlokNo === slokNo ? 'bg-[#FF8434]' : ''
+  }
 
   const verseArr = [];
   for (let i = 0; i < chapter.verses_count; i++) {
     verseArr.push(
       <PaginationItem onClick={() => handleClick(i + 1)} key={i}>
-        <PaginationLink href="#">{i + 1}</PaginationLink>
+        <PaginationLink className={getTheClassName(i + 1)} href="#">{i + 1}</PaginationLink>
       </PaginationItem>
     );
   }
@@ -88,7 +91,7 @@ const Mainpage = ({ chapter }: any) => {
         <h1 className='text-center font-semibold text-[#FF8434] w-fit mx-auto text-xl tracking-widest'>List Of Verses</h1>
         <Pagination>
           <PaginationContent>
-            <div className='flex flex-wrap '>
+            <div className='flex flex-wrap gap-2'>
               {verseArr}
             </div>
           </PaginationContent>

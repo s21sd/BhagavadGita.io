@@ -2,8 +2,6 @@ import { NextRequest, NextResponse } from 'next/server';
 
 export async function GET(req: NextRequest, { params }: { params: { number: string, slokNo: string } }) {
     const { number, slokNo } = params;
-    console.log(number, slokNo);
-
     try {
         const response = await fetch(`https://bhagavadgitaapi.in/slok/${number}/${slokNo}`);
         if (!response.ok) {
